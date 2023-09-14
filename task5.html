@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task5</title>
     <style>
+        table{
+            /* display: flex; */
+            /* margin: auto; 
+            align-items: center;*/
+            margin-left: 450px;
+        } 
         h1
         {
             font-size: 1.5rem;
@@ -15,51 +21,111 @@
         {
             text-align: center;
         }
+        table,th,td
+        {
+            border: 1px solid black;
+            /* border: 1px; */
+        }
+        .button
+        {
+           display: flex;
+           align-items: center;
+           text-align: center;
+           position: relative;
+           margin-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .para
+        {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+        #First_Name,#lastname,#email,#password,#Re_Password,#Age,#phone,#Address
+        {
+            width: 100%;
+        }
     </style>
 </head>
 <body>
     <h1>Registration form</h1>
     <br><br>
-    <label for="First Name" class="hjk">First Name</label>
-    <input  type="text" placeholder="" id="First_Name"/> <br/><br/>
-    <label for="Last Name"  class="hjk">Last Name</label>
-    <input type="text" placeholder="" id="lastname"/> <br/><br/>
-    <label for="email" class="hjk"></label>Email
-    <input  type="email" placeholder="" id="email"/> <br/><br/>
-    <label for="Password" class="hjk">Password</label>
-    <input type="password" placeholder="" id="password"/> <br/><br/>
-    <label for="Re Password" class="hjk">Re-enter Password</label>
-    <input type="password" placeholder="" id="Re_Password"/> <br/><br/>
-    <label for="Gender" class="hjk">Gender:</label>
-    <label for="Male">Male</label>
-    <input type="radio" id="Male"/>
+    <table class="hj1">
+        <tr>
+    <th><label for="First Name" class="hjk">First Name</label></th>
+    
+    <th><input  type="text" placeholder="" id="First_Name"/> </th>
+    </tr>
+    <tr>
+    <th><label for="Last Name"  class="hjk">Last Name</label></th>
+    <th><input type="text" placeholder="" id="lastname"/> </th>
+    </tr>
+    <tr>
+    <th><label for="email" class="hjk">Email</label></th>
+    <th><input  type="email" placeholder="" id="email"/></th>
+</tr>
+<tr>
+   <th> <label for="Password" class="hjk">Password</label></th>
+    <th><input type="password" placeholder="" id="password"/></th>
+    </tr>
+    <tr>
+    <th><label for="Re Password" class="hjk">Re-enter Password</label></th>
+    <th><input type="password" placeholder="" id="Re_Password"/></th>
+</tr>
+<tr>
+    <th><label for="Gender" class="hjk">Gender:</label></th>
+    <td>
+        <input type="radio" id="Male"/>
+        <label for="Male">Male</label>
     <br/>
-    <label for="Female">Female</label>
     <input type="radio" id="Female"/>
-    <br/><br/>
-    <label for="Age" class="hjk">Age:</label>
-    <input type="text" placeholder="" id="Age"/> <br/><br/>
-    <label for="Phone" class="hjk">Phone Number</label>
-    <input type="text" placeholder="" id="phone"/> <br/><br/>
-    <label for="Address" class="hjk">Address:</label>
-    <textarea name="Address" id="Address" cols="30" rows="5"></textarea>
+    <label for="Female">Female</label>
+    
+    
+    </td>
+    </tr>
+    <tr>
+   <th> <label for="Age" class="hjk">Age:</label></th>
+    <th><input type="text" placeholder="" id="Age"/></th>
+    </tr>
+    <tr>
+   <th> <label for="Phone" class="hjk">Phone Number</label></th>
+    <th><input type="text" placeholder="" id="phone"/></th>
+    </tr>
+    <tr>
+    <th><label for="Address" class="hjk">Address:</label></th>
+   <th> <textarea name="Address" id="Address" cols="30" rows="5"></textarea>
 
-     <br/><br/>
-     <label for="State" class="hjk">State</label>
-    <input type="text" placeholder="" id="State"/> <br/><br/>
-    <label for="Country" class="hjk">Country</label>
-    <select name="Country" id="country">
+     </th>
+     </tr>
+     <tr>
+    <th> <label for="State" class="hjk">State</label></th>
+    <th><input type="text" placeholder="" id="State"/> </th>
+    </tr>
+    <tr>
+    <th><label for="Country" class="hjk">Country</label></th>
+    <th><select name="Country" id="country">
         <option value="Choose your country">Choose your country</option>
     </select>
-    <br/><br/>
-    <label for="lang" class="hjk">Languages known</label>
-    <input type="checkbox" placeholder="" id="eng"/>English 
+    
+    </th>
+    </tr>
+    <tr>
+    <th><label for="lang" class="hjk">Languages known</label></th>
+    <td><input type="checkbox" placeholder="" id="eng"/>English 
     <input type="checkbox" placeholder="" id="kan"/>Kannada 
     <input type="checkbox" placeholder="" id="hin"/>Hindi 
-    <input type="checkbox" placeholder="" id="tel"/>Telugu <br/><br/>
-    <input type="checkbox" placeholder="" id="agr"/>Hereby I declare all the given details are true <br/><br/>
-   <p>Log in to <span>Ethnus</span> website</p>
-    <input type="button" placeholder="Register" id="Register" value="Register" /> <br/><br/>
+    <input type="checkbox" placeholder="" id="tel"/>Telugu</td>
+    </tr>
+    <tr>
+    <td><input type="checkbox" placeholder="" id="agr"/>Hereby I declare all the given details are true </td>
+    </tr>
+    <tr>
+        <td></td>
+   <td><p class="para">Log in to <span>Ethnus</span> website</p></td>
+   </tr>
+   </table>
+    <input class="button" type="button" placeholder="Register" id="Register" value="Register" /> <br/><br/>
 </div>
 </body>
 </html>
